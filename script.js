@@ -118,7 +118,7 @@ function addToDOM(fName, lName, attendance, studentID, points, percentAttendance
 			"name": studentID,
 			"class":"ssetting"
 		})
-		simage.setAttribute('src', 'http://placehold.it/50x50');
+		simage.setAttribute('src', 'https://placehold.it/50x50');
 		sinfo.setAttribute('class', 'sinfo');
 		sinfo.value = points;
 		spoints.setAttribute('class', 'spoints');
@@ -470,7 +470,7 @@ window.onload = function(){
 	}
 	
 	// record change of graph properties
-	// graph canvas --> style = http://tinychart.co/
+	// graph canvas --> style = https://tinychart.co/
 	
 	
 };
