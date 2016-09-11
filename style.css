@@ -1,0 +1,712 @@
+/*http://www.cleancss.com/css-beautify/*/
+*, *:after, *:before
+{
+  box-sizing: border-box;
+}
+h3, h4, h5, h6 .tabLabel
+{
+	font-family:'Muli', sans-serif;
+	text-indent: 0;
+}
+h1
+{
+	font-family: 'Muli', sans-serif;
+	font-size: 3em;
+}
+h2
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	text-indent: 1em;
+}
+h3 .tabLabel
+{
+	font-size: 1.5em;
+}
+
+		
+body
+{
+  font-family:'Slabo 27px', sans-serif;
+  color: black;
+  background: #E0E4CC;
+	font-size: 16px;
+	margin: 0 ;
+	overflow: hidden;
+	overflow-y: scroll;
+	
+}
+.login
+{
+	
+  display: block;
+	background: #2196F3;
+  width: 50vw;
+  padding: 2.5em 5em;
+	color: white;
+  overflow: hidden;
+  border-radius: 2vw;
+	margin: 0 auto;
+	margin-top: calc(50vh - (19.5em)/2 );
+}
+.login h1
+{
+  font-size: 4em;
+  font-family: 'Josefin Sans', sans-serif;
+	line-height: 1;
+	margin: 0.75rem 0;
+}
+
+.login input:not([type="submit"]), #modal form input:not([type="submit"])
+{
+	display:block;
+  width: 100%;
+	background: transparent;
+  border: 2px solid white;
+	padding: 0.5em;
+	padding-left: 0;
+	padding-right: 0;
+  text-indent: 1em;
+  color:white;
+  margin-top: 0.75em;
+	font-size: 1.5em;
+	line-height: 1;
+	}
+.login input:first-of-type
+{
+margin-top: 0;
+}
+
+.login input[type="text"]:focus,.login input[type="password"]:focus, #modal form input:not([type="submit"]):focus
+{
+  border-left-width: 10px;
+}
+input, input::-moz-placeholder
+{
+	font-family:"Slabo 27px", serif;
+	font-size: 1em;
+}
+input::-webkit-input-placeholder
+{
+		font-family:"Slabo 27px", serif;
+	font-size: 1em;
+	color: white;
+}
+.club
+{
+  height: 25vh;
+  width: calc(90vw);
+  display: block;
+  margin: 1em auto;
+	background: white;
+	border-radius: 1vh 1vw;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.club img
+{
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+	
+}
+.club nav
+{
+  display: inline-block;
+  height: 100%;
+  width: calc(100% - 25vh - 1em);
+  vertical-align: middle;
+}
+.club nav a
+{
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: #ccc;
+  padding: 0 1em;
+  width: 95%;
+  height: 20%;
+  margin: 1vh auto;
+  border-radius: 0.5em 0.5em;
+}
+.club nav a span
+{
+  vertical-align: middle;
+}
+.club nav h3
+{
+  margin: 0.25em 0;
+	text-indent: 0.25rem;
+  
+}
+.sticker
+{
+	background: #FF9800;
+	border: none;
+	border-radius: 100%;
+	
+	height: 10vw;
+	width: 10vw;
+	margin: 0 0.25em 0.25em 0;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vw;
+	
+	color: white;
+	font-size: 2.5em;
+}
+body > .sticker
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.sticker:active
+{
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.7);
+}
+/*NEW SITE*/
+/*
+#offCanvas:before
+{
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid rgba(0,0,0,0.5);
+	content: " ";
+	position: absolute;
+	left: 2.25em;
+	top: 4.7em;
+}
+*/
+#offCanvas
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -50%;
+	overflow: scroll;
+  overflow-x: hidden;
+  transition: left 1.5s cubic-bezier(.62,.09,.05,.78);
+	
+	width: 50%;
+	display: block;
+
+	padding: 1em;
+	background: rgba(0,0,0, 0.9);
+	z-index: 200;
+}
+#offCanvas h2
+{
+	color: white;
+}
+#offCanvas .club
+{
+  height: 25vh;
+  width: 40vw;
+  display: inline-block;
+  margin: 1em;
+	background: white;
+	border-radius: 1vh 1vw;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.club img
+{
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+	
+}
+nav
+{
+  display: inline-block;
+  height: 100%;
+  width: calc(100% - 25vh - 1em);
+  vertical-align: middle;
+}
+nav a
+{
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: #ccc;
+  padding: 0 1em;
+  width: 95%;
+  height: 20%;
+  margin: 1vh auto;
+  border-radius: 0.5em 0.5em;
+}
+.club nav a span
+{
+  vertical-align: middle;
+}
+nav h3
+{
+  margin: 0.25em 0;
+	text-indent: 0.25rem;
+  
+}
+
+#hamburger
+{
+	display: none;
+}
+label[for="hamburger"]
+{
+	cursor: pointer;
+	font-size: 2em;
+	display: block;
+	height: 1.5em;
+	text-align: center;
+	border-radius: 5px;
+	width: 1.5em;
+	font-weight: bold;
+	background: #0288D1;
+	color: white;
+	display: inline-block;
+	margin:  0.5em;
+	vertical-align: middle;
+	
+  transition: all 1.75s cubic-bezier(.62,.09,.05,.78);
+}
+label[for="hamburger"] + h1
+{
+  display: inline;
+	vertical-align: middle;
+	font-family: 'Josefin Sans', sans-serif;
+}
+#hamburger:checked ~ label
+{
+  margin-left: calc(50% + 0.5em);
+}
+#hamburger:checked ~ #offCanvas, #hamburger:checked ~ #offCanvas:before
+{
+	left: 0;
+}
+
+/*CSS3 TABS*/
+.tabs {
+  font-size: 0;
+  margin: 1rem;
+}
+
+.tabs:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.tabs .tab {
+  display: inline;
+}
+.tabs .tab .tabLabel{
+  background: #BBDEFB;
+	border: 1.5px solid #ccc;
+	border-bottom: 1px solid #0288D1;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 1em; 
+  position: relative;
+  vertical-align: bottom;
+}
+
+.tabs .tab > [type="radio"] {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  opacity: 0;
+  position: fixed;
+  width: 1px;
+  z-index: -1;
+}
+
+.tabs .tabPanel {
+  display: inline;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  width: 0;
+}
+
+.tabs .tabContent {
+  display: block;
+  background: white;
+  padding: 1em;
+  border-top: 1px solid #0288D1;
+  float: left;
+	font-size: 1rem;
+  margin-top: -1px;
+  width: 100%;
+	z-index: 0;
+}
+
+.tabs .tab [type="radio"]:checked + .tabLabel {
+  background: white;
+	box-sizing: content-box;
+	border: 1px solid transparent;
+  z-index: 1;
+}
+
+.tabs .tab [type="radio"]:checked ~ .tabPanel {
+  display: inline;
+}
+/*attendance*/
+form
+{
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+form .legend
+{
+	display: table-header-group;
+}
+form .legend .head
+{
+	display: table-cell;
+	border-left: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-top: none;
+}	
+form .legend .head:first-of-type
+{
+	border-left: none;
+	position: relative;
+	z-index: 1;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*Tooltip*/
+form .legend .head:first-of-type:before, form .legend .head:first-of-type:after
+{
+	visibility: hidden;
+	opacity: 0;
+}
+
+form .legend .head:first-of-type:before
+{
+  position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-bottom: 5px solid #000;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+form .legend .head:first-of-type:after
+{
+	position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-top: -0.45rem;
+    margin-left: -2.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius:         3px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    content: attr(tooltip);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+form .legend .head:first-of-type:hover:before, form .legend .head:first-of-type:hover:after, form .legend .head:first-of-type:hover
+{
+	text-decoration: none;
+	visibility: visible;
+	opacity: 1;
+}
+form .student
+{
+	display: table-row;
+}
+form .student:nth-of-type(2n)
+{
+	background: #BBDEFB;
+}
+form .student *
+{
+	display: table-cell;
+	line-height: 2em;
+	border-left: 2px solid #ccc;
+}
+form .student input[type="checkbox"]
+{
+	cursor: pointer;
+}
+.tabs .tab [type="radio"]:checked ~ .tabPanel .sticker
+{
+	background: #FF9800;
+	border: none;
+	border-radius: 100%;
+	
+	height: 10vw;
+	width: 10vw;
+	margin: 0 0.25em 0.25em 0;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vw;
+	
+	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-size: 2.5em;
+
+}
+.tabs .tab [type="radio"]:checked ~ .tabPanel .sticker
+{
+	background: #FF9800;
+	border: none;
+	border-radius: 100%;
+	
+	height: 10vw;
+	width: 10vw;
+	margin: 0 0.25em 0.25em 0;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-size: 2.5em;
+
+}
+
+.tabs .tab [type="radio"]:checked ~ .tabPanel .sticker:active
+{
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.7);
+}
+/*Statistics*/
+#statistics div
+{
+	display: inline-block;	
+	vertical-align: middle;
+	font-family:'Slabo 27px', serif; 
+}
+#statistics div button
+{
+	margin: 0.5rem 32px;
+	margin-top: 0;
+	width: 10em;
+	padding: 0.5rem;
+	display: block;
+	border: 2px solid #2196F3;
+	background: #BBDEFB;
+	border-radius: 10px;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	font-family: "Slabo 27px", serif;
+	
+}
+#statistics div button:active
+{
+	background: #2196F3;
+	color: white;
+}
+#statistics canvas
+{
+	display: inline-block;
+	vertical-align:middle ;
+	background: #ccc;
+	width: calc(100% - 15rem);
+}
+/*Settings*/
+label[for="property"]
+{
+  margin-left: 2em;
+}
+select
+{
+	font-family: 'Slabo 27px', sans-serif;
+	background: #B3E5FC;
+	font-size: 1em;
+	border: none;
+}
+option:hover
+{
+	border: none;
+	background: orange;
+}
+.ssetting
+{
+	display: inline-block;
+	width: 45%;
+	height: 20vh;
+	margin: 1em 2.4%;
+	border-radius: 1rem;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	overflow: hidden;
+}
+.ssetting .spoints, .ssetting .sdelete
+{
+	display: block;	
+}
+.ssetting img
+{
+	height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+.sinfo
+{
+	display: inline-block;
+	vertical-align: middle;
+	/* change height to solid*/
+	height: 100%;
+	width: calc(95% - 20vh);
+}
+.sinfo h4
+{	
+	margin: 0.75rem 0;
+	text-indent: 0.25rem;
+}
+.sinfo .spoints
+{
+	display: block;
+	background: #03A9F4;
+	width: 95%;
+	height: auto;
+	margin: 0.25em auto;
+	margin-top: 0;
+	text-indent: 1rem;
+	border-radius: 0.5rem;
+	line-height: 1.5em;
+	border: 2px solid #0288D1;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.sinfo .spoints button
+{
+	float: right;
+}
+.spoints button
+{
+	background: #0288D1;
+	color: white;
+	border: none;
+	display: inline-block;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	vertical-align: middle;
+	font-family: 'Slabo 27px', serif;
+	cursor: pointer;
+}
+.spoints button:first-child
+{
+	border-left: 1px solid white;
+}
+.sdelete button
+{
+	border: 2px solid #0288D1;
+	background: #03A9F4;
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	line-height: 1.5em;
+	border-radius: 0.5rem;
+	text-indent: 1rem;
+	padding: 0;
+	font-size: 1rem;
+	text-align: left;
+	font-family: 'Slabo 27px', serif;	
+}
+.sdelete button:active
+{
+background: #0288D1; 
+}
+#modal:target
+{
+display: block;
+}
+#modal
+{
+	background: #ccc;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.95);
+	z-index: 5;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100vh;
+	display:none;
+}
+#modal form {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+	width: initial;
+	line-height: initial;
+  background: #2196F3;
+  padding: 2.5em 5em;
+  box-shadow: 0.25em 0.25em 1em rgba(0,0,0,0.8);
+}
+#modal form h1
+{
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+#modal form input[type = "submit"], form a, .login input[type="submit"]
+{
+  float: right;
+  margin: 0.75em 0 0 1em;
+  display: inline-block;
+  line-height: 2em;
+  height: 2em;
+  font-size: 1em;
+}
+#modal form input[type="submit"], .login input[type="submit"]
+{
+  width: auto;
+	background: #FF9800;
+  padding: 0 2em;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.26);
+  font-family: "Muli", sans-serif;
+}
+#modal form input[type="submit"]:active, .login input[type="submit"]:active	
+{
+	box-shadow: 0 0 0 0 black;
+}
+#modal form a
+{
+  text-decoration: none;
+  color: #B6B6B6;
+  font-family: "Muli", sans-serif;
+}
+#modal input[type = "number"]
+{
+ -moz-appearance: textfield;
+ -webkit-appearance: textfield;
+ appearance: textfield;
+ font-size: 1.25em;
+}
+::-webkit-inner-spin-button, ::-webkit-inner-spin-button { -webkit-appearance: none;}

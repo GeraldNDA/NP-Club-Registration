@@ -1,0 +1,162 @@
+	<!DOCTYPE html>
+		<html>
+			<head>
+				<title> NP Club Management | Club Name </title>
+				<meta charset="utf-8"/>
+				<link href='http://fonts.googleapis.com/css?family=Muli:300|Slabo+27px|Josefin+Sans' rel='stylesheet' type='text/css'>
+				<link href = "style.css" rel="stylesheet" type="text/css">
+				<script src = "script.js" type = "text/javascript"></script>
+				<!--CSS: http://codepen.io/anon/pen/jEpMbR?editors=110-->
+			</head>
+			<body>
+				<input type="checkbox" class="navrigger" name = "hamburger" id = "hamburger"/>
+	<label href = "#" for="hamburger">&#9776;</label>
+	<h1>Club Name</h1>	
+	<nav id = "offCanvas">
+		<h2>
+		Current
+		</h2>
+		<div class = "club">
+			<img src = "http://placehold.it/150x150/">
+			<nav>
+				<h3>
+					Club Name
+				</h3>
+				<a href="club.html#attendance"><span>Attendance</span></a>
+				<a href="club.html#statistics"><span>Statistics</span></a>
+				<a href="club.html#settings"><span>Settings</span></a>
+			</nav>
+		</div>	
+		<h2>Today's</h2>
+		<div class = "club">
+			<img src = "http://placehold.it/150x150/">
+			<nav>
+				<h3>
+					Club Name
+				</h3>
+				<a href="club.html#attendance"><span>Attendance</span></a>
+				<a href="club.html#statistics"><span>Statistics</span></a>
+				<a href="club.html#settings"><span>Settings</span></a>
+			</nav>
+		</div>	
+		<h2>Other</h2>
+		<div class = "club">
+			<img src = "http://placehold.it/150x150/">
+			<nav>
+				<h3>
+					Club Name
+				</h3>
+				<a href="club.html#attendance"><span>Attendance</span></a>
+				<a href="club.html#statistics"><span>Statistics</span></a>
+				<a href="club.html#settings"><span>Settings</span></a>
+			</nav>
+		</div>				
+		<div class = "club">
+			<img src = "http://placehold.it/150x150/">
+			<nav>
+				<h3>
+					Club Name
+				</h3>
+				<a href="club.html#attendance"><span>Attendance</span></a>
+				<a href="club.html#statistics"><span>Statistics</span></a>
+				<a href="club.html#settings"><span>Settings</span></a>
+			</nav>
+		</div>
+		<div class = "club">
+			<img src = "http://placehold.it/150x150/">
+			<nav>
+				<h3>
+					Club Name
+				</h3>
+				<a href="club.html#attendance"><span>Attendance</span></a>
+				<a href="club.html#statistics"><span>Statistics</span></a>
+				<a href="club.html#settings"><span>Settings</span></a>
+			</nav>
+		</div>
+	</nav>
+<!--body wrap-->
+	
+<section id = "body">
+<!--Hamburger menu-->
+
+					<!--Tabbing System-->
+					
+					<div class = "tabs">
+						<div class = "tab" >
+							<input type="radio" class = "tabRadio" id = "attendance" name = "tabGroup" />
+							<label class = "tabLabel" for = "attendance">Attendance</label>
+							<div class = "tabPanel">
+								<section class= "tabContent">
+									<div id="attendance">	
+									<form name = "attendance">
+										<div class = "legend">
+											<div class = "head" tooltip = "Click once for away, click twice for excused">&#10004;</div>
+											<div class = "head">Student Name</div>
+											<div class = "head"> &#37; Attendance </div>
+										</div>
+										<input type = "submit" value = "&#10004;" class = "sticker">
+									</form>
+							</div>
+								</section>
+							</div>
+						</div>
+						<div class = "tab" >
+							<input type="radio" class = "tabRadio" id = "statistics" name = "tabGroup"/>
+							<label class = "tabLabel" for = "statistics">Statistics</label>
+							<div class = "tabPanel">
+								<section class = "tabContent">
+									<div id ="statistics">	
+										<div>
+											<h2>Criteria</h2>
+
+											<button>% Attendance</button>
+											<button>New Students</button>
+											
+											<h2>Time</h2>
+											<button>Day</button>
+											<button>Week</button>
+											<button>Month</button>
+										</div>
+										<canvas id = "graph"></canvas>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class = "tab" >
+					<input type="radio" class = "tabRadio" id = "tabSettings" name = "tabGroup" value = "settings" />
+					<label class = "tabLabel" for = "tabSettings">Settings</label>
+					<div class = "tabPanel">
+						<section class= "tabContent">
+							<div id="settings">
+								<h2>Properties</h2>
+								<label for="property">Sort attendance by</label>
+								<select name="property" id = "property">
+									<option value="Alphabet">Alphabet</option>
+									<option value="Attendance">Attendance</option>
+									<option value="Time">Time Added</option>
+								</select>
+								<h2>Student Details</h2>
+										
+										<a href = "#modal" class = "sticker">
+											&#43;
+										</a>
+										
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div id = "modal">
+            <form name = "modal">
+              <h1 class = "title"> Add a Club Member</h1>
+              <input type = "text" placeholder = "First Name" required>
+              <input type = "text" placeholder = "Last Name" required>
+              <input type ="number" min = "100000" max = "999999" placeholder = "Student Number">
+    
+              <input type ="submit" value = "Add">
+              <a href = "#"> Cancel </a>
+            </form>
+				</div>
+			</body>
+		</html>
